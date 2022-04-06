@@ -62,12 +62,12 @@ header p {
     position: relative;
     right: -6vw;
     width: fit-content;
-    padding: 1px 10px;
+    padding: 4px 16px;
     color: hotpink;
     background-color: white;
 
     font-size: Max(2vw, 20px);
-    font-weight: 400;
+    font-weight: 600;
 }
 
 main h1 {
@@ -150,6 +150,11 @@ body {
 .front-wrap:hover h2,
 .front-wrap:hover p {
     text-shadow: 0 0 20px hotpink, 0 0 10px hotpink;
+}
+
+.front-wrap h1 {
+    font-weight: 400;
+    font-size: 36px;
 }
 
 .front-wrap:hover div a {
@@ -257,6 +262,7 @@ body {
 
 .highlight {
     color: hotpink;
+    font-weight: 800;
 }
 
 
