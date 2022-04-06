@@ -3,10 +3,10 @@
 */
 
 :root {
-    --grep-color-1: #FFF;
-    --grep-color-2: #FFF;
-    --grep-color-3: #FFF;
-    --grep-color-4: #FFF;
+    --grep-color-1: #F68D30;
+    --grep-color-2: #AFD24A;
+    --grep-color-3: #F5C72D;
+    --grep-color-4: #EE4446;
 }
 
 * {
