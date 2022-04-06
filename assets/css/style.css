@@ -91,7 +91,9 @@ a:hover {
     transform: translateX(5px) translateY(-5px);
 }
 
-main {}
+body {
+    transform-style: preserve-3d;
+}
 
 .front-wrap {
     width: 50vw;
@@ -106,7 +108,7 @@ main {}
 
     background: white;
 
-    /* box-shadow: -10px 10px hotpink, -20px 20px lightskyblue; */
+    box-shadow: -10px 10px hotpink, -20px 20px lightskyblue;
 }
 
 .front-wrap:hover {
@@ -115,7 +117,9 @@ main {}
     background-size: cover;
     background-position: 50% 80%;
 
-    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.651), -10px 50px 200px 10px rgba(73, 51, 51, 0.856);
+    /* transform: scale(1.05); */
+
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.651), -10px 50px 1000px 100px rgba(73, 51, 51, 0.856);
 }
 
 .front-wrap:hover h1,
@@ -162,12 +166,13 @@ main {}
     margin: 25px 10px;
     margin-bottom: 0;
     padding: 20px;
-    width: calc((33% - 25px));
-    min-width: 200px;
-    vertical-align: top;
 
+    width: calc((33% - 25px));
+    min-width: 220px;
     height: calc((666px - 33vw));
-    min-height: 200px;
+    min-height: 240px;
+
+    vertical-align: top;
     color: white;
 
 
@@ -187,6 +192,30 @@ main {}
 .info-box a {
     color: hotpink;
     background: white;
+
+
+    width: fit-content;
+    margin: 20px auto;
+
+    display: block;
+    position: absolute;
+
+    bottom: 15px;
+}
+
+.info-box img {
+    position: relative;
+    display: block;
+    width: 120px;
+
+    margin: auto;
+    margin-top: 25px;
+
+    padding: 6px;
+
+    border-radius: 100px;
+
+    border: 4px solid white;
 }
 
 .info-box a:hover {
@@ -211,7 +240,7 @@ main {}
 #fg-0 {
     background: url(../img/noise.png);
     mix-blend-mode: multiply;
-    opacity: 10%;
+    opacity: 5%;
 
 
 }
@@ -219,5 +248,5 @@ main {}
 #fg-1 {
     background: url(../img/noise.png);
     mix-blend-mode: overlay;
-    opacity: 20%;
+    opacity: 10%;
 }
