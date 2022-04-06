@@ -16,3 +16,9 @@
 html, body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* Header */
+header {
+    background-color: hotpink;
+    padding: 20px;
+}
