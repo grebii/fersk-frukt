@@ -134,6 +134,14 @@ body {
 
 .front-wrap p {
     margin-bottom: 60px;
+
+    margin-left: 30px;
+    margin-right: 30px;
+
+    padding: 20px;
+
+    border: 2px dotted;
+    border-radius: 10px;
 }
 
 .bestill-knapper {
@@ -146,8 +154,8 @@ body {
     /* margin-right: calc(10vw - 50px); */
     display: block;
     margin: 40px auto;
-    padding: 5px 20px;
-    width: 250px;
+    padding: 10px 20px;
+    width: 280px;
 
     font-size: 24px;
     font-weight: lighter;
