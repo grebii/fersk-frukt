@@ -19,6 +19,9 @@
 html,
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    height: 100%;
+    width: 100%;
 }
 
 html {
@@ -33,6 +36,10 @@ body {
 
 /* Header */
 header {
+    position: relative;
+    display: block;
+    width: 100%;
+
     color: white;
     background-color: hotpink;
     /* background-image: url(../img/spook.jpg); */
@@ -43,7 +50,18 @@ header {
     font-size: 24px;
 }
 
+header h1 {
+    position: relative;
+    width: fit-content;
+
+    right: -4vw;
+
+    padding-bottom: 11px;
+}
+
 header p {
+    position: relative;
+    right: -2vw;
     color: black;
 }
 
