@@ -7,7 +7,6 @@
     --grep-color-drue: #AFD24A;
     --grep-color-banan: #F5C72D;
     --grep-color-epple: #EE4446;
-
     --grep-color-header: #FFF;
 }
 
@@ -24,19 +23,6 @@ header {
     background-color: var(--grep-color-header);
     padding: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* here goes the footer */
 footer {
