@@ -2,6 +2,13 @@
     Grepfrukt nye og bedre CSS
 */
 
+:root {
+    --grep-color-1: #FFF;
+    --grep-color-2: #FFF;
+    --grep-color-3: #FFF;
+    --grep-color-4: #FFF;
+}
+
 * {
     margin: 0px;
 }
