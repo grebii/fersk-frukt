@@ -106,7 +106,7 @@ a {
 }
 
 a:hover {
-    box-shadow: -3px 3px lightskyblue;
+    box-shadow: -4px 4px lightskyblue;
     transform: translateX(2px) translateY(-2px);
 }
 
