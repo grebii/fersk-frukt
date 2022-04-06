@@ -7,7 +7,6 @@
     --grep-color-drue: #AFD24A;
     --grep-color-banan: #F5C72D;
     --grep-color-epple: #EE4446;
-
     --grep-color-header: #FFF;
 }
 
@@ -22,5 +21,11 @@ html, body {
 /* Header */
 header {
     background-color: var(--grep-color-header);
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--grep-color-drue);
     padding: 20px;
 }
