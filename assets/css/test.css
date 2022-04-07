@@ -1,0 +1,25 @@
+body {
+    background: grey;
+
+    font-family: sans-serif;
+}
+
+.logo-title {
+    display: block;
+    position: relative;
+    height: 10vmax;
+    font-size: 6vmax;
+
+    background: black;
+}
+
+.logo-title img {
+    height: 100%;
+}
+
+.logo-title h1 {
+    display: inline-block;
+    color: white;
+
+    text-transform: uppercase;
+}

@@ -40,27 +40,49 @@ header {
     position: relative;
     display: block;
     width: 100%;
-    height: 18vw;
+    height: 20vmax;
+    font-size: 3vmax;
     min-height: 5em;
     max-height: 8em;
 
     color: white;
     background-color: hotpink;
-    /* background-image: url(../img/spook.jpg); */
     background-position: 0% 40%;
     box-shadow: 0 0 100px 100px hotpink;
     padding: 20px 0;
 }
 
-.logo {
-    margin-top: 1em;
-    position: relative;
-    right: -8vw;
-    padding-bottom: 11px;
+.head-content {
     height: 100%;
+    width: 90%;
+    margin: 0 auto;
+
+    outline: 4px solid black;
 }
 
-header p {
+.head-content .logo {
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 11px;
+
+    height: 60%;
+    width: fit-content;
+    text-align: center;
+}
+
+.head-content p {
+    position: relative;
+    right: -6vw;
+    width: fit-content;
+    padding: 4px 16px;
+    color: hotpink;
+    background-color: white;
+
+    /* font-size: Max(2vw, 1em); */
+    font-weight: 600;
+}
+
+/* header p {
     position: relative;
     right: -6vw;
     width: fit-content;
@@ -70,7 +92,7 @@ header p {
 
     font-size: Max(2vw, 1em);
     font-weight: 600;
-}
+} */
 
 main h1 {
     margin-bottom: 40px;
@@ -157,6 +179,7 @@ body {
 .front-wrap h1 {
     font-weight: 400;
     font-size: 2.6em;
+    text-transform: uppercase;
 }
 
 .front-wrap:hover div a {
