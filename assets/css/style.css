@@ -1,5 +1,12 @@
-/*
-    Grepfrukt nye og bedre CSS
+/* 
+    Stylesheet for the better grepfrukt
+
+    ==| Notes |====================================================================================
+    use font: Cascadia Code with lingatures.
+
+    Think color gradient are supposed to go like this:
+    100% --> 50% --> 25% --> 12% --> 6% --> etc...
+    devide by half or smtn.
 */
 
 :root {
@@ -7,7 +14,9 @@
     --grep-color-drue: #AFD24A;
     --grep-color-banan: #F5C72D;
     --grep-color-epple: #EE4446;
-    --grep-color-header: #FFF;
+
+    /* Friendly colors */
+    --def-color-foot-base: #EEE;
 }
 
 * {
