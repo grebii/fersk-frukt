@@ -10,29 +10,14 @@
 */
 
 :root {
+    /* ==| GREP Frukt colors |== */
     --grep-color-appelsin: #F68D30;
     --grep-color-drue: #AFD24A;
     --grep-color-banan: #F5C72D;
     --grep-color-epple: #EE4446;
 
-    /* Friendly colors */
+    /* ==| Friendly colors |== */
     --def-color-foot-base: #EEE;
-}
-
-* {
-    margin: 0px;
-}
-
-html, body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 /*

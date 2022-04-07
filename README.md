@@ -1,7 +1,3 @@
-# fersk-frukt
+# Fersk Frukt
 
-En nyere og *sikkert* bedere versjon av grepfrukt.
-
-## Todo
-
-> *nothing here yet*
+Made from scratch and *improved* version of a former project. Made by people who probably don't know what they are doing.
