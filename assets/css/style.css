@@ -282,7 +282,7 @@ body {
 
 .smol {
     font-size: 66.6%;
-    vertical-align: top;
+    vertical-align: super;
 }
 
 .highlight {
