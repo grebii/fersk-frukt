@@ -3,7 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 
-    outline: 1px solid rgb(0, 0, 0);
+    font-family: 'Roboto',
+        sans-serif;
+
+    /* border: 1px solid red; */
 }
 
 html {
@@ -13,8 +16,29 @@ html {
 body {
     width: 100%;
     min-height: 100%;
+
+    background: rgb(41, 41, 46);
 }
 
+h1,
+h2 {
+    font-family: 'Roboto Slab',
+        cursive;
+}
+
+header {
+    width: fit-content;
+    padding: 40px;
+    margin: 40px auto;
+}
+
+header>h1 {
+
+    text-align: center;
+    font-size: 6em;
+    font-weight: 400;
+    text-transform: capitalize;
+}
 
 main {
     height: fit-content;
@@ -22,22 +46,70 @@ main {
     padding: 20px;
 }
 
+
+/* vvv footer vvv */
+
 footer {
-    position: absolute;
+    --footcol: rgb(255, 255, 255);
+
+    position: relative;
     bottom: 0;
     width: 100%;
+    /* height: fit-content; */
 
-    background: grey;
+    color: var(--footcol);
+    background: rgb(41, 41, 46);
+
+    word-spacing: 0.05em;
+    line-height: 1.1;
 }
 
 footer>ul {
     display: flex;
-    grid-template-columns: auto auto auto;
-    /* gap: 10px; */
+    list-style-type: none;
 }
 
 footer>ul>li {
     position: relative;
-    /* display: inline-block; */
-    /* width: 10vw; */
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
 }
+
+footer>ul>li>.title {
+    text-align: center;
+    border-bottom: 2px dotted var(--footcol);
+
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+/* ^^^ footer ^^^ */
+
+/* desktop rules*/
+@media screen and (min-width: 600px) {
+    main {
+        background-color: pink;
+    }
+}
+
+/* mobile rules */
+@media screen and (max-width: 600px) {
+    main {
+        background-color: lightblue;
+    }
+
+    header>p {
+        text-align: center;
+    }
+}
+
+/* footer cringe */
+/* @media screen and (max-height: 600px) {
+    footer {
+        position: absolute;
+        bottom: auto;
+        top: 600px
+    }
+
+} */

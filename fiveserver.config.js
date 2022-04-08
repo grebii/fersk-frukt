@@ -4,5 +4,5 @@ module.exports = {
     remoteLogs: true, // enable remoteLogs
     remoteLogs: "yellow", // enable remoteLogs and use the color yellow
     injectCss: true, // disable injecting css
-    navigate: false, // disable auto-navigation
+    navigate: true, // disable auto-navigation
 }
