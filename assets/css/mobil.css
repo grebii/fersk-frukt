@@ -29,3 +29,15 @@ footer {
 
     background: grey;
 }
+
+footer>ul {
+    display: flex;
+    grid-template-columns: auto auto auto;
+    /* gap: 10px; */
+}
+
+footer>ul>li {
+    position: relative;
+    /* display: inline-block; */
+    /* width: 10vw; */
+}
