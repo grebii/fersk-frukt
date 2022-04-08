@@ -38,8 +38,16 @@ a {
 
 a:hover {
     color: white;
+    display: block;
+    transform: scale(1.01);
 
     transition: all 0.1s ease-in;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, lightblue, skyblue);
 }
 
 /* vvv header vvv */
@@ -72,9 +80,9 @@ header>.banner>h1 {
     display: inline;
 }
 
-/* .breadcrumbs>li>a {
-    color: gray;
-} */
+.breadcrumbs>li>a {
+    display: inline-block;
+}
 
 .breadcrumbs>li:last-of-type {
     font-style: italic;
@@ -87,6 +95,7 @@ header>.banner>h1 {
 
 .breadcrumbs>li:last-of-type a:hover {
     color: gray;
+    transform: scale(1);
 }
 
 .breadcrumbs>li+li::before {
@@ -127,6 +136,19 @@ main.story-time>section {
     flex: 1;
     min-width: 450px;
     padding: 40px;
+}
+
+/* < links > */
+main.story-time a {
+    color: black;
+}
+
+main.story-time a>h1 {
+    font-size: 200%;
+}
+
+main.story-time a:hover {
+    color: white;
 }
 
 .page-fill {
@@ -188,7 +210,7 @@ footer>ul>li>h2 {
 
     /* let text become smaller on mobile so it don't stick out */
     main.story-time>section {
-        min-width: 100px;
+        min-width: 120px;
     }
 }
 
