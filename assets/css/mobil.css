@@ -9,6 +9,10 @@
     /* border: 1px solid red; */
 }
 
+html {
+    height: 100%;
+}
+
 body {
     min-height: 100%;
 
@@ -39,22 +43,30 @@ a {
 
 a:hover {
     color: white;
-    display: block;
+    display: inline-block;
     transform: scale(1.01);
 
     transition: all 0.1s ease-in;
 }
 
+a:active {
+    transform: scale(0.95);
+    transition: all 0.05s ease-in;
+}
+
 hr {
     border: 0;
     height: 1px;
-    background: linear-gradient(to right, lightblue, skyblue);
+    background: linear-gradient(to right, skyblue, rgb(107, 198, 255));
 }
 
 /* vvv header vvv */
 header {
     background: rgb(41, 41, 46);
     color: white;
+
+    z-index: 1;
+    box-shadow: 0px 0px 100px 10px rgba(0, 0, 0, 0.25);
 }
 
 header>.banner {
@@ -112,6 +124,8 @@ main {
     /* background: url("../img/paint.jpg");
     background-size: cover;
     background-position: 50% 50%; */
+
+    flex: 1;
 }
 
 main.story-time {
@@ -119,18 +133,22 @@ main.story-time {
     flex-wrap: wrap;
 }
 
-main.story-time>.img-frame {
-    padding: 40px;
+main.story-time .img-frame {
+    /* padding: 40px; */
     width: 80vw;
     max-width: 30em;
     margin: 0 auto auto;
 }
 
-main.story-time>.img-frame>img {
-    height: 100%;
-    width: 100%;
-    /* box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.705); */
-    box-shadow: -10px 10px 0 0 rgba(0, 0, 0, 0.705);
+main.story-time .img-frame>img {
+    height: 101%;
+    width: 101%;
+    /*remove this if you change to the other thingy*/
+    transform: scale(0.9);
+    /* box-shadow: -10px 10px 0px 0px rgba(0, 0, 0, 0.705); */
+    box-shadow: -5px 5px 50px 0px rgba(0, 0, 0, 0.705);
+
+    filter: hue-rotate(-20deg) saturate(0.5) contrast(2);
 }
 
 main.story-time>section {
@@ -139,13 +157,13 @@ main.story-time>section {
     padding: 40px;
 }
 
-/* < links > */
 main.story-time a {
     color: black;
+    display: inline-block;
 }
 
-main.story-time a>h1 {
-    font-size: 200%;
+main.story-time h1 {
+    font-size: 1.5em;
 }
 
 main.story-time a:hover {
@@ -153,25 +171,28 @@ main.story-time a:hover {
 }
 
 .page-fill {
-    flex: 1;
+    flex: 0;
 }
 
 
 /* vvv footer vvv */
 
 footer {
-    --footcol: rgb(255, 255, 255);
+    --footcol: rgb(41, 41, 46);
 
     position: relative;
-    bottom: 0;
+    /* bottom: 0; */
     width: 100%;
-    /* height: fit-content; */
+    flex: auto;
 
     color: var(--footcol);
-    background: rgb(41, 41, 46);
+    /* background: rgb(41, 41, 46); */
+    background: linear-gradient(skyblue, rgb(107, 198, 255));
 
     word-spacing: 0.05em;
     line-height: 1.33;
+
+    box-shadow: 0px 0px 100px 10px rgb(0, 0, 0, 0.25);
 }
 
 footer>ul {
@@ -191,8 +212,9 @@ footer>ul>li {
 }
 
 footer>ul>li>h2 {
-    border-bottom: 2px dotted var(--footcol);
+    /* border-bottom: 2px dotted var(--footcol); */
 
+    font-size: 1.2em;
     margin-bottom: 5px;
     padding-bottom: 5px;
 
@@ -211,7 +233,13 @@ footer>ul>li>h2 {
 
     /* let text become smaller on mobile so it don't stick out */
     main.story-time>section {
-        min-width: 120px;
+        min-width: 200px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main.story-time .img-frame {
+        margin: 0;
     }
 }
 
@@ -246,4 +274,17 @@ body::after {
 
     mix-blend-mode: multiply;
     opacity: 0.1;
+}
+
+/* misc */
+.align-right {
+    float: right;
+}
+
+.smol {
+    font-size: 0.9em;
+}
+
+.up {
+    vertical-align: super;
 }
