@@ -1,0 +1,20 @@
+/* 
+    Global stylesheet
+
+    ==| Notes |====================================================================================
+    >> This is serve as the "Global" style. Overwire the default boring style.
+
+    ==| TODO |=====================================================================================
+    >> No updates yet...
+*/
+
+:root {
+    
+}
+
+* { margin: 0px; }
+html, body { font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+/* ==| A |========================================================================================= */
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }

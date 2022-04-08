@@ -1,0 +1,65 @@
+/* 
+    Stylesheet for the better grepfrukt
+
+    ==| Notes |====================================================================================
+    use font: Cascadia Code with lingatures.
+
+    Think color gradient are supposed to go like this:
+    100% --> 50% --> 25% --> 12% --> 6% --> etc...
+    devide by half or smtn.
+*/
+
+:root {
+    /* ==| GREP Frukt colors |== */
+    --grep-color-appelsin: #F68D30;
+    --grep-color-drue: #AFD24A;
+    --grep-color-banan: #F5C72D;
+    --grep-color-epple: #EE4446;
+
+    /* ==| Friendly colors |== */
+    --def-color-foot-base: #EEE;
+}
+
+/*
+    ====| Header |=================================================================================
+*/
+header {
+    background-color: var(--grep-color-header);
+    padding: 20px;
+}
+
+/*
+    ====| Footer |=================================================================================
+*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: #EEE;
+    border-top: 2px solid #DDD;
+    text-align: center;
+}
+
+footer .info-box {
+    text-align: left;
+    margin: 0px 20px;
+    padding: 20px;
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+
+    background-color: #DDD;
+    border-radius: 2pt;
+}
+footer .info-box h3 {
+    padding-bottom: 10px;
+}
+
+footer .info-box p {
+    text-align: left;
+}
+
+footer .info-box a {
+    color: rgb(204, 204, 204);
+}
