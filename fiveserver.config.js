@@ -1,7 +1,7 @@
 module.exports = {
-    highlight: false, // enable highlight feature
+    highlight: true, // enable highlight feature
     injectBody: true, // enable instant update
-    remoteLogs: false, // enable remoteLogs
-    injectCss: false, // disable injecting css
+    remoteLogs: true, // enable remoteLogs
+    injectCss: true, // disable injecting css
     navigate: true, // disable auto-navigation
 }
