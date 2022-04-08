@@ -9,14 +9,17 @@
     /* border: 1px solid red; */
 }
 
-html {
-    height: 100%;
-}
-
 body {
-    width: 100%;
     min-height: 100%;
 
+    background: rgb(88, 88, 94);
+
+    display: flex;
+    flex-direction: column;
+
+    /* background: url("../img/paint.jpg");
+    background-size: cover;
+    background-position: 50% 50%; */
     background: rgb(41, 41, 46);
 }
 
@@ -26,24 +29,108 @@ h2 {
         cursive;
 }
 
-header {
-    width: fit-content;
-    padding: 40px;
-    margin: 40px auto;
+a {
+    text-decoration: none;
+    color: gray;
+
+    transition: all 0.1s ease-out;
 }
 
-header>h1 {
+a:hover {
+    color: white;
 
-    text-align: center;
-    font-size: 6em;
+    transition: all 0.1s ease-in;
+}
+
+/* vvv header vvv */
+header {
+    background: rgb(41, 41, 46);
+    color: white;
+}
+
+header>.banner {
+    width: fit-content;
+    padding: 40px;
+    margin: 20px auto;
+}
+
+header>.banner>h1 {
+    font-size: 4em;
     font-weight: 400;
     text-transform: capitalize;
 }
 
+/* vvv navigation vvv */
+.breadcrumbs {
+    /* word-spacing: 4px; */
+    padding: 10px;
+    font-weight: 400;
+    color: gray;
+}
+
+.breadcrumbs>li {
+    display: inline;
+}
+
+/* .breadcrumbs>li>a {
+    color: gray;
+} */
+
+.breadcrumbs>li:last-of-type {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.breadcrumbs>li:last-of-type a {
+    cursor: default;
+}
+
+.breadcrumbs>li:last-of-type a:hover {
+    color: gray;
+}
+
+.breadcrumbs>li+li::before {
+    font-style: normal;
+    content: "> ";
+    font-weight: 800;
+}
+
+/* vvv main vvv */
 main {
-    height: fit-content;
-    margin: 20px;
-    padding: 20px;
+    /* background: rgba(255, 105, 180, 0.575); */
+    background: linear-gradient(rgb(255, 75, 165), rgb(206, 89, 206));
+    /* background: url("../img/paint.jpg");
+    background-size: cover;
+    background-position: 50% 50%; */
+}
+
+main.story-time {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main.story-time>.img-frame {
+    padding: 40px;
+    width: 80vw;
+    max-width: 30em;
+    margin: 0 auto auto;
+}
+
+main.story-time>.img-frame>img {
+    height: 100%;
+    width: 100%;
+    /* box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.705); */
+    box-shadow: -10px 10px 0 0 rgba(0, 0, 0, 0.705);
+}
+
+main.story-time>section {
+    flex: 1;
+    min-width: 450px;
+    padding: 40px;
+}
+
+.page-fill {
+    flex: 1;
 }
 
 
@@ -61,55 +148,79 @@ footer {
     background: rgb(41, 41, 46);
 
     word-spacing: 0.05em;
-    line-height: 1.1;
+    line-height: 1.33;
 }
 
 footer>ul {
-    display: flex;
     list-style-type: none;
+    text-align: center;
 }
 
 footer>ul>li {
+    display: inline-block;
     position: relative;
     margin: 20px;
     padding: 10px;
-    width: 100%;
+    width: 25vw;
+    min-width: 200px;
+    vertical-align: top;
+    text-align: left;
 }
 
-footer>ul>li>.title {
-    text-align: center;
+footer>ul>li>h2 {
     border-bottom: 2px dotted var(--footcol);
 
     margin-bottom: 5px;
     padding-bottom: 5px;
-}
 
-/* ^^^ footer ^^^ */
-
-/* desktop rules*/
-@media screen and (min-width: 600px) {
-    main {
-        background-color: pink;
-    }
+    text-align: left;
 }
 
 /* mobile rules */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 580px) {
     main {
         background-color: lightblue;
     }
 
-    header>p {
+    header {
         text-align: center;
+    }
+
+    /* let text become smaller on mobile so it don't stick out */
+    main.story-time>section {
+        min-width: 100px;
     }
 }
 
-/* footer cringe */
-/* @media screen and (max-height: 600px) {
-    footer {
-        position: absolute;
-        bottom: auto;
-        top: 600px
-    }
+/* vvv overlay vvv */
+body::before {
+    position: fixed;
+    display: block;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url("../img/noise.png");
+    z-index: 100;
+    pointer-events: none;
 
-} */
+    mix-blend-mode: overlay;
+    opacity: 0.05;
+}
+
+body::after {
+    position: fixed;
+    display: block;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url("../img/noise.png");
+    z-index: 100;
+    pointer-events: none;
+
+    mix-blend-mode: multiply;
+    opacity: 0.1;
+}
