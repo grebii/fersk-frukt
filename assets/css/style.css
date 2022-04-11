@@ -25,6 +25,8 @@ html,
 body {
     font-family: 'Roboto',
         sans-serif;
+
+    overflow-x: hidden;
 }
 
 html {
@@ -124,9 +126,17 @@ body {
     min-width: 100px;
 }
 
+.empty.left {
+    flex: 4;
+}
+
+.empty.right {
+    flex: 1;
+}
+
 main {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-content: center;
 }
@@ -135,8 +145,8 @@ main>section {
     display: flex;
     flex-direction: column;
 
-    flex: 1.2;
-    margin: 200px 100px;
+    flex: 4;
+    margin: 200px 0px;
     padding: 20px;
 
     min-height: 600px;
@@ -144,6 +154,8 @@ main>section {
     background: white;
     box-shadow: -10px 10px hotpink,
         -20px 20px lightskyblue;
+
+    transform: translateX(10px);
 
 }
 
@@ -256,6 +268,10 @@ footer a {
 
     main {
         flex-direction: column;
+    }
+
+    main>section {
+        margin: 200px 10px;
     }
 
     header {
