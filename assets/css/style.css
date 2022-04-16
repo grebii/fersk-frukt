@@ -153,10 +153,15 @@ main>section {
 
     background: white;
     box-shadow: -10px 10px hotpink,
-        -20px 20px lightskyblue;
+        -20px 20px lightskyblue, -15px 15px 200px rgb(255, 255, 255);
 
     transform: translateX(10px);
 
+}
+
+main>section>h1 {
+    font-size: 2.5em;
+    font-weight: 500;
 }
 
 main>section h2 {
